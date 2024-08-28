@@ -1,0 +1,260 @@
+%-------------------------
+% Resume in Latex
+% Author : Generic Author
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Generic Name} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:0000000000}{\color{blue}+00 00000 00000} 
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:email@example.com}{\color{blue}email@example.com}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/generic-profile/}{\color{blue}LinkedIn}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/username}{\color{blue}GitHub}
+\end{center}
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{0pt}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Generic University}{City, State}
+      {Bachelor of Technology in Engineering; \textbf{GPA: 0.0}}{2022 \textbf{--} 2026 (Expected)}
+      
+    \resumeSubheading
+      {Generic High School}{City, State}
+      {Class 12th; \textbf{Percentage: 0\%}}{2020 \textbf{--} 2022}
+      
+    \resumeSubheading
+      {Generic School}{City, State}
+      {Class 10th; \textbf{Percentage: 0\%}}{2015 \textbf{--} 2020}
+      
+  \resumeSubHeadingListEnd
+
+%----------- PROFESSIONAL EXPERIENCE -----------
+
+\section{Professional Experience}
+\vspace{0pt}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Generic Company}{City, State}
+{Intern}{June 2024 \textbf{--} Present}
+  \resumeItemListStart
+    \resumeItem{Worked on format conversion for company projects as part of the team.}
+    \resumeItem{Implemented a library for converting data formats, enhancing efficiency and accuracy.}
+    \resumeItem{Matched conversion results to existing outputs, reducing costs and improving performance.}
+  \resumeItemListEnd
+
+\resumeSubheading
+{Generic Startup}{City, State}
+{Founder | CEO | App Developer}{2017 \textbf{--} Present}
+  \resumeItemListStart
+    \resumeItem{Developed various apps including \textbf{App1}, \textbf{App2}, \textbf{App3}, and \textbf{App4}, enhancing performance and user experience.}
+    \resumeItem{Converted websites to apps, designed graphics, and developed additional features.}
+  \resumeItemListEnd
+
+\resumeSubheading
+{Generic Publisher}{City, State}
+{Author | Publisher}{2017 \textbf{--} Present}
+  \resumeItemListStart
+    \resumeItem{Authored and published a book on \textbf{Topic}.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%----------- PROJECTS -----------
+
+\section{Projects}
+\vspace{0pt}
+\resumeSubHeadingListStart
+    
+  \resumeProjectHeading
+    {\textbf{Project 1}}{App Development}
+      \resumeItemListStart
+        \resumeItem{Developed an engaging \textbf{quiz app} that challenges users on various topics.}
+      \resumeItemListEnd
+    
+  \resumeProjectHeading
+    {\textbf{Project 2}}{App Development}
+      \resumeItemListStart
+        \resumeItem{Created a fun \textbf{puzzle game} for users of all ages.}
+      \resumeItemListEnd
+    
+  \resumeProjectHeading
+    {\textbf{Project 3}}{Web Development}
+      \resumeItemListStart
+        \resumeItem{Designed and developed a \href{https://github.com/username/project}{\color{blue}website} to address specific challenges.}
+      \resumeItemListEnd
+    
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%----------- TECHNICAL SKILLS -----------
+
+\section{Technical Skills}
+\vspace{0pt}
+\resumeSubHeadingListStart
+  \resumeItemListStart
+    \resumeItem{\textbf{Programming Languages}{: C, C++, Python, Java}}
+    \resumeItem{\textbf{Web Development}{: HTML, CSS, JavaScript, ReactJS, Bootstrap}}
+    \resumeItem{\textbf{App Development}{: App Development Tools}}
+    \resumeItem{\textbf{Coursework}{: Relevant Courses}}
+    \resumeItem{\textbf{Specialized Skills}{: Specialized Skills}}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%----------- AWARDS AND ACHIEVEMENTS -----------
+
+\section{Awards and Achievements}
+\vspace{0pt}
+\resumeSubHeadingListStart
+  \resumeItemListStart
+    \resumeItem{\textbf{Award Name:} Description of the award or recognition received.}
+    \resumeItem{\textbf{Competition Name:} Details of achievements or notable performance.}
+    \resumeItem{\textbf{Top Scorer:} Notable achievements in exams or assessments.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%----------- POSITIONS OF RESPONSIBILITY -----------
+
+\section{Positions of Responsibility}
+\vspace{0pt}
+\resumeSubHeadingListStart
+  \resumeItemListStart
+    \resumeItem{\textbf{Position, Organization}, Description of responsibilities and contributions.}
+    \resumeItem{\textbf{Position, Organization}, Description of responsibilities and contributions.}
+    \resumeItem{\textbf{Position, Organization}, Description of responsibilities and contributions.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
